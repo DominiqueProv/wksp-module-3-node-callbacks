@@ -1,12 +1,21 @@
+<%#  inport header from partial %> 
 <%- include('../partials/header') %>
+<%#  set the main container for the app %> 
 <div class='input-container'>
+    <%#  import the form to submit the input from partial %> 
     <%- include('../partials/todoInput') %>
 </div>
+<%#  set the container for the list to be display in a list%> 
 <div class='content'>
     <ul class='todo-list'>
+        <%#  make a forEach loop thru the array %> 
         <% items.forEach(item => { %>
             <li class='todo-list--item'><%= item %></li> 
         <% }); %>
     </ul>
 </div>
+<%#  import the footer from partial %> 
+
 <%- include('../partials/footer') %>
+
+
