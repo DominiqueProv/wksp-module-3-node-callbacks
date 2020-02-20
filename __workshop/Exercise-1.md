@@ -15,6 +15,15 @@ Only move on to the next question when you have enough detail that you would be 
 ```
 // Answer here
 
+
+GET/POST 
+Add the input value in an array {object} — see top50 Song example
+pass input in a <li>
+function (param input) === user input
+
+
+
+
 ```
 
 ## Two - `server.js`
@@ -28,15 +37,22 @@ _The NPM site might be a good place to start. Feel free to provide links as rele
 ```
 // Answer here
 
+Middle man between the user input and the database to parse the data and see if it matches. 
+
+line 18 
+line 24
 ```
 
 ## Three - `server.js`
 
 Look at lines `23` and `24`. Explain the methods used. How are they different? What are the usecases for each?
 
+
+
+
 ```
 // Answer here
-
+req.body is parsing the user input into the array. using the POST
 ```
 
 ## Four - `server.js`
@@ -45,6 +61,8 @@ Line `6`. That's new. What do you think it's for?
 
 ```
 // Answer here
+
+tell the server that the function exist in an external file 
 
 ```
 
@@ -55,6 +73,9 @@ Explain line `1`. Where, why and how is `items` being used?
 ```
 // Answer here
 
+it's use to handle form data from the user input, store the object to be parsed and are used to be displayed in the todoInput.
+
+
 ```
 
 ## Six - `handlers.js`
@@ -63,6 +84,8 @@ Why is there `redirect` on line `11`;
 
 ```
 // Answer here
+
+once the data is parsed, need an action to be redirect 
 
 ``` 
 
@@ -73,14 +96,22 @@ The `handle404` function is a more complex than we've seen thus far, what is the
 ```
 // Answer here
 
+res a html if the req is for a browser 
+res a json if the req is for the server 
+if not both of these case, req a txt
+
+
+
 ```
 
 ## Eight - `ejs`
 
 Take a look at `homepage.ejs` and `todoInput.ejs`. What is happening in there? Explain line-by-line...
-
 ```
 // Answer here
+
+see files sudo comment 
+
 
 ```
 
@@ -91,6 +122,9 @@ What are lines `2` to `7` for this file? Where are these values being used? Take
 ```
 // Answer here
 
+variable declaired to be reused thru the whole scss files
+
+
 ```
 
 ## Ten - `_homepage.scss`
@@ -99,6 +133,9 @@ Line `16`. See if by searching the Sass documentation, you can determine what _e
 
 ```
 // Answer here
+
+use the # only in the calc to pass the variable value 
+
 
 ```
 
